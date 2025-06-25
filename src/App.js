@@ -9,8 +9,8 @@ import Home from "./pages/Home";
 import JSONFormatter from "./pages/JSONFormatter";
 
 function App() {
-  const userPlanLimitMB = 50;
-  const usedMB = 0;
+  // const userPlanLimitMB = 50;
+  // const usedMB = 0;
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ function App() {
           /> */}
 
           <Route path="/" element={<Home />} />
-          <Route path="/merge" element={<JSONUploader limitMB={50} usedMB={49.8} isDarkMode={isDarkMode} />} />
+          <Route path="/merge" element={<JSONUploader />} />
           <Route path="/formatter" element={<JSONFormatter />} />
           <Route path="/upgrade" element={<UpgradePage />} />
           <Route path="/success" element={<h2>✅ Payment Successful! Plan Upgraded.</h2>} />

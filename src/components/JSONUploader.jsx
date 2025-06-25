@@ -6,7 +6,10 @@ import "./JSONUploader.css";
 import "./BouncingArrow.css";
 import { useNavigate } from "react-router-dom";
 
-function JSONUploader({ limitMB, usedMB, isDarkMode }) {
+function JSONUploader() {
+    const limitMB = 50;
+    const usedMB = 0;
+    const isDarkMode = true;
     const navigate = useNavigate();
     const [jsonFiles, setJsonFiles] = useState([]);
     const [fileDetails, setFileDetails] = useState([]);
